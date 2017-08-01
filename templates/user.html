@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <h2>Your informations are</h2>
+{% end %}
+{% block body %}
+    <ul>
+        {% for one in users  %}
+            <li>username: {{one[0]}}</li>
+            <li>password: {{one[1]}}</li>
+        {% end %}
+    </ul>
+{% end %}

@@ -8,7 +8,7 @@ $(document).ready(function(){
         var user = $("#username").val();
         var pwd = $("#password").val();
         var pd = {"username":user, "password":pwd, "_xsrf":getCookie("_xsrf")};
-        # var pd = {"username":user, "password":pwd};
+        //var pd = {"username":user, "password":pwd};
         $.ajax({
             type: "post",
             url: "/",

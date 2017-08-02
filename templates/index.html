@@ -6,7 +6,7 @@
 {% end %}
 {% block body %}
     <form method="POST">
-        <!--{% raw xsrf_form_html() %}-->
+        {% raw xsrf_form_html() %}
         <p><span>UserName:&nbsp;&nbsp;</span><input type="text" id="username" /></p>
         <p><span>PassWord:&nbsp;&nbsp;</span><input type="password" id="password" /></p>
         <p><input type="button" value="登录" id="login" /></p>

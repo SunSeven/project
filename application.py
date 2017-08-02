@@ -11,7 +11,7 @@ settings = dict(
     static_path = os.path.join(os.path.dirname(__file__), 'statics'),
     debug = True,
     cookie_secret = "bZJc2sWbQLKos6GkHn/VB9oXwQt8S0R0kRvJ5/xJ89E=",
-    # xsrf_cookies = True,
+    xsrf_cookies = True,
 )
 
 application = tornado.web.Application(
